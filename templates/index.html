@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pet Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1>Random Pet Generator</h1>
+
+<div style="margin-bottom: 20px;">
+    <button id="cat_btn">Get Cat</button>
+    <button id="dog_btn">Get Dog</button>
+    <button id="fox_btn">Get Fox</button>
+    <button id="panda_btn">Get Panda</button>
+    <button id="random_btn">🎲 Random</button>
+</div>
+
+<div style="text-align:center;">
+    <img id="petImage"  alt="Pet will appear here">
+
+    <div id="loader" style="display:none;">
+        <div class="spinner"></div>
+        <p id="status">Loading...</p>
+    </div>
+</div>
+
+<h3>Last 5 Pets</h3>
+<div id="history"></div>
+
+<script src="{{ url_for('static', filename='script/script.js') }}"></script>
+
+</body>
+</html>
